@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.yattasolutions.umllab.rcp"
+      label="UML Lab Modeling IDE Launcher"
+      version="1.33.0.202306170802"
+      provider-name="%providerName"
+      plugin="com.yattasolutions.umllab.branding">
+
+   <description>
+      UML Lab Modeling IDE
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseUrl">
+   %licenseText 
+   </license>
+
+   <url>
+      <update label="UML Lab Update Site" url="https://platform.yatta.de/update/uml-lab/"/>
+      <discovery label="The Eclipse Project Updates" url="https://download.eclipse.org/eclipse/updates/4.27"/>
+      <discovery label="2022-12" url="https://download.eclipse.org/releases/2023-03"/>
+   </url>
+
+   <includes
+         id="com.yattasolutions.umllab"
+         version="1.33.0.202306170802"/>
+
+   <requires>
+      <import feature="org.eclipse.equinox.p2.user.ui" version="0.0.0"/>
+      <import feature="org.eclipse.rcp" version="0.0.0"/>
+      <import feature="org.eclipse.platform" version="0.0.0"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.equinox.simpleconfigurator.manipulator"
+         download-size="28"
+         install-size="51"
+         version="2.2.100.v20221117-1044"
+         unpack="false"/>
+
+   <plugin
+         id="com.yattasolutions.umllab.branding"
+         download-size="196"
+         install-size="329"
+         version="1.33.0.202306170802"
+         unpack="false"/>
+
+</feature>

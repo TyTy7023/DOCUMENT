@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?compositeMetadataRepository version="1.0.0"?>
+<repository name="CDO 4.0 Releases" type="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository" version="1.0.0">
+  <properties size="3">
+    <property name="p2.timestamp" value="1700915622572"/>
+    <property name="p2.compressed" value="false"/>
+    <property name="p2.mirrorsURL" value="https://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/updates/releases/4.0&amp;protocol=http&amp;format=xml"/>
+  </properties>
+  <children size="8">
+    <child location="https://archive.eclipse.org/modeling/emf/cdo/drops/R20120518-0411"/>
+    <child location="https://archive.eclipse.org/modeling/emf/cdo/drops/R20120518-0411/categories"/>
+    <child location="https://archive.eclipse.org/modeling/emf/cdo/drops/R20120214-1026"/>
+    <child location="https://archive.eclipse.org/modeling/emf/cdo/drops/R20120214-1026/categories"/>
+    <child location="https://archive.eclipse.org/modeling/emf/cdo/drops/R20110913-0010"/>
+    <child location="https://archive.eclipse.org/modeling/emf/cdo/drops/R20110913-0010/categories"/>
+    <child location="https://archive.eclipse.org/modeling/emf/cdo/drops/R20110608-1407"/>
+    <child location="https://archive.eclipse.org/modeling/emf/cdo/drops/R20110608-1407/categories"/>
+  </children>
+</repository>

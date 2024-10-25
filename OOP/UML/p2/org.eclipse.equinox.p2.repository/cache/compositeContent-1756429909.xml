@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><?compositeMetadataRepository version="1.0.0"?>
+<repository name="CDO 4.x Releases" type="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository" version="1.0.0">
+  <properties size="3">
+    <property name="p2.timestamp" value="1700915622515"/>
+    <property name="p2.compressed" value="false"/>
+    <property name="p2.mirrorsURL" value="https://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/updates/releases/4.x&amp;protocol=http&amp;format=xml"/>
+  </properties>
+  <children size="36">
+    <child location="../../../drops/R20230906-0630"/>
+    <child location="../../../drops/R20230906-0630/categories"/>
+    <child location="../../../drops/R20230606-0205"/>
+    <child location="../../../drops/R20230606-0205/categories"/>
+    <child location="../../../drops/R20230307-0126"/>
+    <child location="../../../drops/R20230307-0126/categories"/>
+    <child location="../../../drops/R20221130-2113"/>
+    <child location="../../../drops/R20221130-2113/categories"/>
+    <child location="../../../drops/R20220907-1207"/>
+    <child location="../../../drops/R20220907-1207/categories"/>
+    <child location="../../../drops/R20220608-1105"/>
+    <child location="../../../drops/R20220608-1105/categories"/>
+    <child location="../../../drops/R20220309-1120"/>
+    <child location="../../../drops/R20220309-1120/categories"/>
+    <child location="../../../drops/R20220116-1034"/>
+    <child location="../../../drops/R20220116-1034/categories"/>
+    <child location="../../../drops/R20211202-0900"/>
+    <child location="../../../drops/R20211202-0900/categories"/>
+    <child location="../../../drops/R20210908-0655"/>
+    <child location="../../../drops/R20210908-0655/categories"/>
+    <child location="../../../drops/R20210826-0457"/>
+    <child location="../../../drops/R20210826-0457/categories"/>
+    <child location="../../../drops/R20210608-2339"/>
+    <child location="../../../drops/R20210608-2339/categories"/>
+    <child location="../../../drops/R20210308-1312"/>
+    <child location="../../../drops/R20210308-1312/categories"/>
+    <child location="../../../drops/R20201209-0330"/>
+    <child location="../../../drops/R20201209-0330/categories"/>
+    <child location="../../../drops/R20200902-0430"/>
+    <child location="../../../drops/R20200902-0430/categories"/>
+    <child location="../../../drops/R20200610-0035"/>
+    <child location="../../../drops/R20200610-0035/categories"/>
+    <child location="../../../drops/R20200311-1513"/>
+    <child location="../../../drops/R20200311-1513/categories"/>
+    <child location="../../../drops/R20191211-0144"/>
+    <child location="../../../drops/R20191211-0144/categories"/>
+  </children>
+</repository>

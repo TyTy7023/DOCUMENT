@@ -1,0 +1,4 @@
+#Tracing options for UMLLab
+com.yattasolutions.umllab/debug=true
+com.yattasolutions.diagrams.layout/debug=false
+com.yattasolutions.diagrams.layout/debug/debugWindows=true
