@@ -1,0 +1,57 @@
+<mxfile host="65bd71144e">
+    <diagram id="j-uJXnGUIdLNTWB56Ykf" name="Page-1">
+        <mxGraphModel dx="1018" dy="690" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="29" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;verticalAlign=bottom;strokeColor=#991700;dashed=1;dashPattern=12 12;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="251" width="639" height="332" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="group;fontStyle=0" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="529" y="359" width="233" height="301" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="group" parent="8" vertex="1" connectable="0">
+                    <mxGeometry width="233" height="301" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;div&gt;&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;font color=&quot;#000000&quot; style=&quot;font-size: 20px;&quot;&gt;Hệ thống quản lý sinh viên&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="14" vertex="1">
+                    <mxGeometry width="162" height="162" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="0" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#000000;" parent="14" vertex="1">
+                    <mxGeometry x="63.5" width="35" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="endArrow=none;html=1;fontSize=20;fontColor=#FFFFFF;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" parent="14" source="2" target="2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="391" y="311" as="sourcePoint"/>
+                        <mxPoint x="441" y="261" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="&lt;font color=&quot;#000000&quot;&gt;ACTOR&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="405" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="thông tin nhập liệu" style="curved=1;endArrow=classic;html=1;fontSize=15;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="10" target="2">
+                    <mxGeometry x="0.1162" y="-49" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="510.1083873865339" y="196.89161261346635" as="sourcePoint"/>
+                        <mxPoint x="630" y="347" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="351" y="240"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="91" value="danh sách thông tin" style="curved=1;endArrow=classic;html=1;fontSize=15;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="10">
+                    <mxGeometry x="-0.1779" y="-33" width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="216" y="552" as="sourcePoint"/>
+                        <mxPoint x="630" y="345.9999999999999" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="332" y="627"/>
+                        </Array>
+                        <mxPoint x="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="93" value="" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="76" y="180" width="740" height="517" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
