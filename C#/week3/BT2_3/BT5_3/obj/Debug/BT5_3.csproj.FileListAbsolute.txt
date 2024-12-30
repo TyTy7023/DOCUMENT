@@ -1,0 +1,7 @@
+C:\Users\Admin\OneDrive\Máy tính\C#\week3\BT2_3\BT5_3\bin\Debug\BT5_3.exe.config
+C:\Users\Admin\OneDrive\Máy tính\C#\week3\BT2_3\BT5_3\bin\Debug\BT5_3.exe
+C:\Users\Admin\OneDrive\Máy tính\C#\week3\BT2_3\BT5_3\bin\Debug\BT5_3.pdb
+C:\Users\Admin\OneDrive\Máy tính\C#\week3\BT2_3\BT5_3\obj\Debug\BT5_3.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Máy tính\C#\week3\BT2_3\BT5_3\obj\Debug\BT5_3.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\C#\week3\BT2_3\BT5_3\obj\Debug\BT5_3.exe
+C:\Users\Admin\OneDrive\Máy tính\C#\week3\BT2_3\BT5_3\obj\Debug\BT5_3.pdb

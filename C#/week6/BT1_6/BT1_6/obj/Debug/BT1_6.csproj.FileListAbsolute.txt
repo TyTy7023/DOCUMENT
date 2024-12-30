@@ -1,0 +1,7 @@
+C:\Users\Admin\OneDrive\Máy tính\C#\week6\BT1_6\BT1_6\bin\Debug\BT1_6.exe.config
+C:\Users\Admin\OneDrive\Máy tính\C#\week6\BT1_6\BT1_6\bin\Debug\BT1_6.exe
+C:\Users\Admin\OneDrive\Máy tính\C#\week6\BT1_6\BT1_6\bin\Debug\BT1_6.pdb
+C:\Users\Admin\OneDrive\Máy tính\C#\week6\BT1_6\BT1_6\obj\Debug\BT1_6.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Máy tính\C#\week6\BT1_6\BT1_6\obj\Debug\BT1_6.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\C#\week6\BT1_6\BT1_6\obj\Debug\BT1_6.exe
+C:\Users\Admin\OneDrive\Máy tính\C#\week6\BT1_6\BT1_6\obj\Debug\BT1_6.pdb
