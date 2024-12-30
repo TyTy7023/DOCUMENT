@@ -1,7 +1,0 @@
-C:\Users\Admin\OneDrive\Máy tính\C#\week2\BT2_VN\BT2_VN\bin\Debug\BT2_VN.exe.config
-C:\Users\Admin\OneDrive\Máy tính\C#\week2\BT2_VN\BT2_VN\bin\Debug\BT2_VN.exe
-C:\Users\Admin\OneDrive\Máy tính\C#\week2\BT2_VN\BT2_VN\bin\Debug\BT2_VN.pdb
-C:\Users\Admin\OneDrive\Máy tính\C#\week2\BT2_VN\BT2_VN\obj\Debug\BT2_VN.csproj.AssemblyReference.cache
-C:\Users\Admin\OneDrive\Máy tính\C#\week2\BT2_VN\BT2_VN\obj\Debug\BT2_VN.csproj.CoreCompileInputs.cache
-C:\Users\Admin\OneDrive\Máy tính\C#\week2\BT2_VN\BT2_VN\obj\Debug\BT2_VN.exe
-C:\Users\Admin\OneDrive\Máy tính\C#\week2\BT2_VN\BT2_VN\obj\Debug\BT2_VN.pdb
