@@ -1,0 +1,27 @@
+# you need to change the file to .sh extension to run it as a script
+
+#!/bin/sh
+
+Hamx() {
+  num=$1
+  dem=0
+  for ((i=2; i<num; i++))
+  do
+    let temp=num%i
+    if [ $temp -eq 0 ]
+    then
+      return 1  # Không phải số nguyên tố
+    fi
+  done
+  return 0  # Là số nguyên tố
+}
+
+string=$*
+for i in $string
+do
+  Hamx $i
+  if [ $? -eq 0 ]
+  then
+    echo $i  # In ra số nguyên tố
+  fi
+done

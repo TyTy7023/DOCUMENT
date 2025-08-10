@@ -1,0 +1,118 @@
+# you need to change the file to .sh extension to run it as a script
+#!/bin/bash
+
+cd_file="cd_list.txt"
+detail_file="cd_details.txt"
+invoice_file="invoice.txt"
+
+function them_cd() {
+  read -p "Mã CD: " id
+  read -p "Tên CD: " name
+  read -p "Thể loại: " genre
+  read -p "Tác giả: " author
+  read -p "Giá: " price
+  read -p "Số lượng: " quantity
+  echo "$id|$name|$genre|$author|$price|$quantity" >> "$cd_file"
+  echo "Thêm CD thành công."
+}
+
+function them_chi_tiet() {
+  read -p "Mã CD: " id
+  echo "Nhập danh sách bài hát (kết thúc bằng dòng trống):"
+  while true; do
+    read -p "Bài hát: " song
+    [ -z "$song" ] && break
+    echo "$id|$song" >> "$detail_file"
+  done
+  echo "Thêm chi tiết thành công."
+}
+
+function hien_thi_ngan_gon() {
+  echo "== Danh sách CD =="
+  awk -F "|" '{printf "Mã: %s | Tên: %s | Giá: %s | SL: %s\n", $1, $2, $5, $6}' "$cd_file"
+}
+
+function hien_thi_day_du() {
+  echo "== Thông tin CD đầy đủ =="
+  while IFS="|" read -r id name genre author price quantity; do
+    echo "Mã: $id | Tên: $name | Thể loại: $genre | Tác giả: $author | Giá: $price | SL: $quantity"
+    echo "Bài hát:"
+    grep "^$id|" "$detail_file" | cut -d'|' -f2 | nl
+    echo "----------------------"
+  done < "$cd_file"
+}
+
+function tim_cd_theo_the_loai() {
+  read -p "Nhập thể loại: " genre
+  grep "|$genre|" "$cd_file"
+}
+
+function tim_cd_theo_tac_gia() {
+  read -p "Nhập tên tác giả: " author
+  grep "|[^|]*|[^|]*|$author|" "$cd_file"
+}
+
+function tim_cd_theo_bai_hat() {
+  read -p "Nhập tên bài hát: " song
+  grep "|$song" "$detail_file" | cut -d'|' -f1 | while read id; do
+    grep "^$id|" "$cd_file"
+  done
+}
+
+function ban_cd() {
+  read -p "Nhập mã CD cần bán: " id
+  read -p "Số lượng cần bán: " amount
+
+  if grep -q "^$id|" "$cd_file"; then
+    line=$(grep "^$id|" "$cd_file")
+    IFS="|" read -r id name genre author price quantity <<< "$line"
+
+    if (( quantity >= amount )); then
+      new_quantity=$((quantity - amount))
+      sed -i "s/^$id|.*|$quantity\$/$id|$name|$genre|$author|$price|$new_quantity/" "$cd_file"
+      total=$((price * amount))
+      echo "Hóa đơn: $name x $amount = $total VND" >> "$invoice_file"
+      echo "Bán hàng thành công."
+    else
+      echo "Không đủ hàng."
+    fi
+  else
+    echo "Không tìm thấy CD."
+  fi
+}
+
+function in_hoa_don() {
+  echo "== HÓA ĐƠN BÁN HÀNG =="
+  cat "$invoice_file"
+}
+
+# Menu chính
+while true; do
+  echo ""
+  echo "=== QUẢN LÝ TIỆM CD ==="
+  echo "1. Thêm CD"
+  echo "2. Thêm thông tin chi tiết CD"
+  echo "3. Hiển thị thông tin CD ngắn gọn"
+  echo "4. Hiển thị thông tin CD đầy đủ"
+  echo "5. Tìm kiếm CD theo thể loại"
+  echo "6. Tìm kiếm CD theo tác giả"
+  echo "7. Tìm kiếm CD theo tên bài hát"
+  echo "8. Bán CD"
+  echo "9. In hóa đơn bán hàng"
+  echo "10. Thoát"
+  read -p "Chọn chức năng [1-10]: " choice
+
+  case $choice in
+    1) them_cd ;;
+    2) them_chi_tiet ;;
+    3) hien_thi_ngan_gon ;;
+    4) hien_thi_day_du ;;
+    5) tim_cd_theo_the_loai ;;
+    6) tim_cd_theo_tac_gia ;;
+    7) tim_cd_theo_bai_hat ;;
+    8) ban_cd ;;
+    9) in_hoa_don ;;
+    10) echo "Thoát chương trình."; break ;;
+    *) echo "Lựa chọn không hợp lệ." ;;
+  esac
+done

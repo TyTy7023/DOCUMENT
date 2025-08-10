@@ -1,0 +1,67 @@
+# you need to change the file to .sh extension to run it as a script
+
+#!/bin/bash
+
+# Hàm kiểm tra user đã tồn tại trong file data.txt chưa
+check_user_exists() {
+  username=$1
+  grep -q "^$username " data.txt
+  return $?
+}
+
+# Hàm tạo user giả lập
+taouser() {
+  username=$1
+  if check_user_exists "$username"; then
+    echo "User $username da ton tai."
+    return 1
+  else
+    echo "Da tao user $username thanh cong."
+    return 0
+  fi
+}
+
+# Hàm lưu trữ username và phòng ban vào file data.txt
+luutru() {
+  username=$1
+  phongban=$2
+  echo "$username $phongban" >> data.txt
+  echo "Da luu thong tin user $username vao phong ban $phongban"
+}
+
+# Hàm xuất thông tin user theo phòng ban
+xuatthongtin() {
+  phongban=$1
+  result=$(grep " $phongban$" data.txt)
+  if [ -z "$result" ]; then
+    echo "Khong tim thay thong tin phong ban $phongban"
+  else
+    echo "$result"
+  fi
+}
+
+# Bắt đầu chương trình chính
+echo "Chuong trinh tao user"
+echo "Chon 1 neu muon tao user, chon 2 neu muon tim user"
+read chon
+
+case $chon in
+  1)
+    echo "Nhap username"
+    read username
+    echo "Nhap phong ban"
+    read phongban
+    taouser "$username"
+    if [ $? -eq 0 ]; then
+      luutru "$username" "$phongban"
+    fi
+    ;;
+  2)
+    echo "Nhap phong ban"
+    read phongban
+    xuatthongtin "$phongban"
+    ;;
+  *)
+    echo "Chon sai"
+    ;;
+esac

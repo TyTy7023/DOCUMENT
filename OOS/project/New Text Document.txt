@@ -1,0 +1,29 @@
+#!/bin/bash
+
+NUM_CD=10
+
+TAC_GIA=("SON TUNG" "TUNG DUONG" "MINH HANG" "MONO" "HIEUTHU2" "MY TAM" "DEN VAU" "HUONG BABY")
+THE_LOAI=("RAP" "POP" "BALLAD" "ROCK" "NHAC PHIM")
+BAI_HAT=("MAT KET NOI" "LAC TROI" "CHUNG TA CUA HIEN TAI" "TAI SINH" "EM XINH" "HUA TREN MAY" "TRAN BO NHO" "CHU LAD")
+
+> cd_list.txt
+> cd_details.txt
+
+for ((i=1; i<=NUM_CD; i++)); do
+    MA_CD="CD$(printf "%03d" $i)"
+    TEN_CD="ALBUM $i"
+    THELOAI=${THE_LOAI[$RANDOM % ${#THE_LOAI[@]}]}
+    TACGIA=${TAC_GIA[$RANDOM % ${#TAC_GIA[@]}]}
+    GIA=$((RANDOM % 100000 + 100000))
+    SL=$((RANDOM % 10 + 1))
+
+    echo "$MA_CD|$TEN_CD|$THELOAI|$TACGIA|$GIA|$SL" >> cd_list.txt
+
+    SONGS=$((RANDOM % 3 + 2))  # 2 đến 4 bài hát
+    for ((j=1; j<=SONGS; j++)); do
+        BAI=${BAI_HAT[$RANDOM % ${#BAI_HAT[@]}]}
+        echo "$MA_CD|$BAI" >> cd_details.txt
+    done
+done
+
+echo "Đã sinh dữ liệu vào cd_list.txt và cd_details.txt"
